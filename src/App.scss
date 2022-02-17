@@ -1,0 +1,27 @@
+.app {
+    height: 100vh;
+
+    .sections {
+        width: 100%;
+        height: calc(100vh - 70px);
+        background-color: lightsalmon;
+        position: relative;
+        top: 70px;
+
+        // snap to the beginning of the component
+        scroll-snap-type: y mandatory;
+
+        scrollbar-width: none; // for firefox
+        &::-webkit-scrollbar { // for chrome, safari etc.
+            display: none;
+        }
+
+        > * {
+            width: 100%;
+            height: calc(100vh - 70px);
+
+            // snap to the beginning of the component
+            scroll-snap-align: start;
+        }
+    }
+}
