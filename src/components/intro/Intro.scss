@@ -1,4 +1,87 @@
 .intro {
-    background-color: lightpink;
+    background-color: white;
+    display: flex;
+
+    .left {
+        flex: 0.5;
+        overflow: hidden;
+
+        .imgContainer {
+            width: 850px;
+            height: 850px;
+            overflow: hidden;
+            background-color: #cf455c;
+            //background-image: url("../../../public/assets/bg-body2.png");
+            border-radius: 50%;
+            display: flex;
+            align-items: flex-end;
+            float: right;
+
+            img {
+                width: 80%;
+                align-items: center;
+            }
+        }
+    }
+
+    .right {
+        flex: 0.5;
+        position: relative;
+
+        .wrapper {
+            width: 100%;
+            height: 100%;
+            padding-left: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            h1 {
+                font-size: 60px;
+                margin: 10px 0;
+            }
+
+            h2 {
+                font-size: 35px;
+            }
+
+            h3 {
+                font-size: 30px;
+                color: #cf455c;
+                span {
+                    font-size: inherit;
+                }
+
+                .ityped-cursor {
+                    animation: blink 1s infinite;
+                }
+
+                @keyframes blink {
+                    50% {
+                        opacity: 1;
+                    }
+                    100% {
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+
+        a {
+            position: absolute;
+            bottom: 10px;
+            left: 40%;
+            img {
+                width: 35px;
+                animation: arrowBlink 2s infinite;
+            }
+
+            @keyframes arrowBlink {
+                100% {
+                    opacity: 0;
+                }
+            }
+        }
+    }
 }
   
