@@ -68,8 +68,8 @@ function Resume() {
         </div>
         ))}
       </div>
-      <img src="assets/arrow.png" className="arrow left" onClick={() => handleClick("left")} />
-      <img src="assets/arrow.png" className="arrow right" onClick={() => handleClick()} />
+      <img src="assets/arrow.png" alt="" className="arrow left" onClick={() => handleClick("left")} />
+      <img src="assets/arrow.png" alt="" className="arrow right" onClick={() => handleClick()} />
     </div>
   )
 }

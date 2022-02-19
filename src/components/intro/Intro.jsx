@@ -1,8 +1,6 @@
 import "./Intro.scss"
 import { init } from 'ityped'
 import { useEffect, useRef } from 'react'
-import {Phone, Mail, LinkedIn, GitHub} from '@material-ui/icons'
-
 
 function Intro() {
   const textRef = useRef()
@@ -31,7 +29,7 @@ function Intro() {
           <h3>I <span ref={textRef}></span></h3>
         </div>
         <a href="#projects">
-          <img src="assets/down.png" />
+          <img src="assets/down.png" alt="" />
         </a>
       </div>
     </div>
