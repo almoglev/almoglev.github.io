@@ -1,6 +1,8 @@
 import "./Intro.scss"
 import { init } from 'ityped'
 import { useEffect, useRef } from 'react'
+import {Phone, Mail, LinkedIn, GitHub} from '@material-ui/icons'
+
 
 function Intro() {
   const textRef = useRef()
@@ -10,7 +12,7 @@ function Intro() {
       showCursor: true,
       backDelay: 1500,
       backSpeed: 60,
-      strings: ["am a Software Engineer", "graduated with a B.Sc. in Computer Science", "love learning new technologies", "love solving riddles & puzzles"],
+      strings: ["am a Software Engineer", "graduated with a B.Sc. in Computer Science", "love learning new technologies"],
     })
   }, [])
   
@@ -21,6 +23,7 @@ function Intro() {
           <img src="assets/me.png" alt="Almog Lev" />
         </div>
       </div>
+
       <div className="right">
         <div className="wrapper">
           <h2>Hi There, I'm</h2>

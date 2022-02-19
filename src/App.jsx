@@ -3,7 +3,7 @@ import Topbar from "./components/topbar/Topbar"
 import Intro from "./components/intro/Intro"
 import Projects from "./components/projects/Projects"
 import Resume from "./components/resume/Resume"
-// import Testimonials from "./components/testimonials/Testimonials"
+import Techstack from "./components/techstack/Techstack"
 import Contact from "./components/contact/Contact"
 import Menu from "./components/menu/Menu"
 
@@ -19,9 +19,9 @@ function App() {
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
       <div className="sections">
         <Intro />
+        <Techstack />
         <Projects />
         <Resume />
-        {/* <Testimonials /> */}
         <Contact />
       </div>
     </div>

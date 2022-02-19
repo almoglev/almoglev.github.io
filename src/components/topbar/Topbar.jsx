@@ -17,7 +17,7 @@ function Topbar({ menuOpen, setMenuOpen }) {
             <span>almoglev3@gmail.com</span>
           </div>
 
-          {/* <div className="itemContainer">
+          <div className="itemContainer">
             <a href="https://linkedin.com/in/almoglev" className="ahref" target="_blank" rel="noreferrer">
               <LinkedIn className="icon" />
               <span>linkedin.com/in/almoglev</span>
@@ -29,7 +29,7 @@ function Topbar({ menuOpen, setMenuOpen }) {
               <GitHub className="icon" />
               <span>github.com/almoglev</span>
             </a>
-          </div> */}
+          </div>
         </div>
         <div className="right">
           <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
