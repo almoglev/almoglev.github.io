@@ -44,7 +44,7 @@ function Resume() {
     <div className='resume' id='resume'>
       <div className="slider" style={{transform: `translateX(-${currSlide * 100}vw)`}}>
       {data.map((d,i)=>(
-        <div className="container">
+        <div className="container" key={i}>
           <div className="item">
             <div className="left">
               <div className="leftContainer" key={i}>
@@ -55,8 +55,8 @@ function Resume() {
                 <h2>{d.time}</h2>
                 <h3>{d.title}</h3>
                 
-                {d.description.map((line) =>(
-                  <span>
+                {d.description.map((line,i) =>(
+                  <span key={i}>
                      {`⮞  ${line}`}
                     <br />
                   </span>

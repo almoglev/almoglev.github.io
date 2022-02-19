@@ -42,10 +42,10 @@ function Techstack() {
             </div>
             <div className="center">
               {d.center.map((c, j)=>(
-                <>
+                <div key={j}>
                     <img src={c.img} alt="" width="35px"/>
                     <span>{c.lang}</span><br />
-                </>
+                </div>
               ))}
             </div>
           </div>

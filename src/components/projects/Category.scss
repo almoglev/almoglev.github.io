@@ -9,7 +9,8 @@
     cursor: pointer;
 
     &.active {
-        background-color: $mainColor;
+        background-image: linear-gradient(60deg, #00ccff,#a200ff);
+        border: 1px;
         color: white;
         font-weight: 500;
     }
