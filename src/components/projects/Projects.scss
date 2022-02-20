@@ -1,4 +1,4 @@
-@import "../../Global.scss";
+@import "../../global.scss";
 
 .projects {
     background-color: white;
@@ -35,12 +35,10 @@
             border: 1px solid rgb(206, 206, 206);
             margin: 10px 20px;
             display: flex;
-            // align-items: center;
             justify-content: center;
             color: white;
             position: relative;
             transition: all 0.5s ease;
-            // cursor: pointer;
 
             h3 {
                 margin-top: 30px;
