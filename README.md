@@ -1,2 +1,2 @@
 # almoglev.github.io
-👉 [Click here](https://almoglev.github.io) to see my website
+👉 [Click here](https://almoglev.netlify.app/) to see my website
