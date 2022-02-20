@@ -20,14 +20,14 @@ function Topbar({ menuOpen, setMenuOpen }) {
           <div className="itemContainer">
             <a href="https://linkedin.com/in/almoglev" className="ahref" target="_blank" rel="noreferrer">
               <LinkedIn className="icon" />
-              <span>linkedin.com/in/almoglev</span>
+              {/* <span>linkedin.com/in/almoglev</span> */}
             </a>
           </div>
           
           <div className="itemContainer">
             <a href="https://github.com/almoglev" className="ahref" target="_blank" rel="noreferrer">
               <GitHub className="icon" />
-              <span>github.com/almoglev</span>
+              {/* <span>github.com/almoglev</span> */}
             </a>
           </div>
         </div>
