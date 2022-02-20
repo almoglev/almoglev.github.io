@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 import Category from "./Category"
 import "./Projects.scss"
-import {featuredPortfolio, fullstackPortfolio, frontendPortfolio, backendPortfolio} from "../../projects.js"
+import {featuredPortfolio, fullstackPortfolio, frontendPortfolio, dbPortfolio} from "../../projects.js"
 import {Reply} from '@material-ui/icons'
 
 function Projects() {
@@ -21,8 +21,8 @@ function Projects() {
       title: "Frontend",
     },    
     {
-      id: "backend",
-      title: "Backend",
+      id: "with database",
+      title: "With Database",
     },
   ]
 
@@ -36,10 +36,10 @@ function Projects() {
         break      
       case "frontend": 
         setData(frontendPortfolio)
-        break      
-      case "backend": 
-        setData(backendPortfolio)
-        break
+        break     
+      case "with database": 
+        setData(dbPortfolio)
+        break   
       default: 
         setData(featuredPortfolio)
     }
@@ -56,7 +56,7 @@ function Projects() {
            key={item.id} 
            id={item.id}
            title={item.title} 
-           isActive={selected === item.id} s
+           isActive={selected === item.id}
            setSelected={setSelected}/>
         ))}
       </ul>
